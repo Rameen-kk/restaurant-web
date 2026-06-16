@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Menu</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FoodieHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
 
-<nav class="navbar">
-<div class="logo">FoodHub</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <section class="menu-section">
+        <h1>Our Menu</h1>
 
-<section class="menu">
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn" data-filter="main">Main Course</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+        </div>
 
-<h1>Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="starters">
+                <img src="images/spring-roll.jpg" alt="Spring Roll">
+                <div class="item-info">
+                    <h3>Spring Roll</h3>
+                    <p>Crispy veg rolls with sweet chili sauce</p>
+                    <span class="price">Rs. 350</span>
+                </div>
+            </div>
 
-<input type="text" id="search" placeholder="Search Food">
+            <div class="menu-item" data-category="main">
+                <img src="images/biryani.jpg" alt="Biryani">
+                <div class="item-info">
+                    <h3>Chicken Biryani</h3>
+                    <p>Traditional biryani with raita & salad</p>
+                    <span class="price">Rs. 650</span>
+                </div>
+            </div>
 
-<div class="filters">
-<button onclick="filterMenu('all')">All</button>
-<button onclick="filterMenu('burger')">Burgers</button>
-<button onclick="filterMenu('pizza')">Pizza</button>
-<button onclick="filterMenu('drink')">Drinks</button>
-</div>
+            <div class="menu-item" data-category="desserts">
+                <img src="images/cake.jpg" alt="Lava Cake">
+                <div class="item-info">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Hot cake with melting chocolate center</p>
+                    <span class="price">Rs. 450</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="cards">
-
-<div class="menu-card burger">
-<img src="images/burger.jpg">
-<h3>Chicken Burger</h3>
-<p>Fresh Chicken Burger</p>
-<span>$8</span>
-</div>
-
-<div class="menu-card pizza">
-<img src="images/pizza.jpg">
-<h3>Cheese Pizza</h3>
-<p>Loaded Cheese</p>
-<span>$15</span>
-</div>
-
-<div class="menu-card drink">
-<img src="images/drink.jpg">
-<h3>Cold Drink</h3>
-<p>Refreshing Beverage</p>
-<span>$3</span>
-</div>
-
-</div>
-
-</section>
-
-<script src="js/script.js"></script>
-
+    <footer>
+        <p>&copy; 2026 FoodieHub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
