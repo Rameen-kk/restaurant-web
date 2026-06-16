@@ -1,92 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FoodHub Restaurant</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FoodieHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
 
-<nav class="navbar">
-<div class="logo">FoodHub</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food, Delivered Fresh</h1>
+            <p>Experience the best taste in town with our chef's special dishes</p>
+            <a href="menu.html" class="btn">Explore Menu</a>
+        </div>
+    </section>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <h2>Featured Dishes</h2>
+        <div class="dish-container">
+            <div class="dish-card">
+                <img src="images/biryani.jpg" alt="Biryani">
+                <h3>Chicken Biryani</h3>
+                <p>Rs. 650</p>
+            </div>
+            <div class="dish-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Rs. 1200</p>
+            </div>
+            <div class="dish-card">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Zinger Burger</h3>
+                <p>Rs. 550</p>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-<h1>Delicious Food For Every Mood</h1>
-<p>Fresh Ingredients & Amazing Taste</p>
-<a href="menu.html" class="btn">Explore Menu</a>
-</section>
-
-<section class="featured">
-<h2>Featured Dishes</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="images/burger.jpg">
-<h3>Zinger Burger</h3>
-<p>Crispy chicken burger</p>
-</div>
-
-<div class="card">
-<img src="images/pizza.jpg">
-<h3>Cheese Pizza</h3>
-<p>Extra cheese pizza</p>
-</div>
-
-<div class="card">
-<img src="images/bbq.jpg">
-<h3>BBQ Platter</h3>
-<p>Smoky BBQ special</p>
-</div>
-
-</div>
-</section>
-
-<section class="why-us">
-<h2>Why Choose Us</h2>
-
-<div class="cards">
-<div class="card">Fresh Ingredients</div>
-<div class="card">Fast Delivery</div>
-<div class="card">Best Taste</div>
-</div>
-
-</section>
-
-<section class="testimonials">
-<h2>Customer Reviews</h2>
-
-<div class="cards">
-
-<div class="card">
-⭐⭐⭐⭐⭐
-<p>Best food in town.</p>
-</div>
-
-<div class="card">
-⭐⭐⭐⭐⭐
-<p>Excellent service.</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-<p>FoodHub Restaurant</p>
-<p>Email: info@foodhub.com</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 FoodieHub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
