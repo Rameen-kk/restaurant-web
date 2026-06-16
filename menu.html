@@ -1,131 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu | Tasty Bites</title>
+<title>Menu</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<nav>
-<div class="container">
-<div class="logo"><a href="index.html">Tasty Bites</a></div>
-<div class="menu-btn" onclick="toggleMenu()">☰</div>
-<ul class="nav-links" id="navLinks">
+<nav class="navbar">
+<div class="logo">FoodHub</div>
+<ul class="nav-links">
 <li><a href="index.html">Home</a></li>
-<li><a href="menu.html" class="active">Menu</a></li>
+<li><a href="menu.html">Menu</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
-</div>
 </nav>
 
-<section class="page-header">
+<section class="menu">
+
 <h1>Our Menu</h1>
-<p>Explore our delicious range of dishes</p>
+
+<input type="text" id="search" placeholder="Search Food">
+
+<div class="filters">
+<button onclick="filterMenu('all')">All</button>
+<button onclick="filterMenu('burger')">Burgers</button>
+<button onclick="filterMenu('pizza')">Pizza</button>
+<button onclick="filterMenu('drink')">Drinks</button>
+</div>
+
+<div class="cards">
+
+<div class="menu-card burger">
+<img src="images/burger.jpg">
+<h3>Chicken Burger</h3>
+<p>Fresh Chicken Burger</p>
+<span>$8</span>
+</div>
+
+<div class="menu-card pizza">
+<img src="images/pizza.jpg">
+<h3>Cheese Pizza</h3>
+<p>Loaded Cheese</p>
+<span>$15</span>
+</div>
+
+<div class="menu-card drink">
+<img src="images/drink.jpg">
+<h3>Cold Drink</h3>
+<p>Refreshing Beverage</p>
+<span>$3</span>
+</div>
+
+</div>
+
 </section>
 
-<section>
-<div class="container">
-<div class="filter-btns">
-<button class="active" onclick="filterMenu('all', this)">All</button>
-<button onclick="filterMenu('fastfood', this)">Fast Food</button>
-<button onclick="filterMenu('bbq', this)">BBQ</button>
-<button onclick="filterMenu('pizza', this)">Pizza</button>
-<button onclick="filterMenu('burger', this)">Burgers</button>
-<button onclick="filterMenu('drinks', this)">Drinks</button>
-<button onclick="filterMenu('desserts', this)">Desserts</button>
-</div>
-
-<div class="menu-grid">
-<div class="food-card" data-category="pizza">
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
-<div class="food-info">
-<span class="category">Pizza</span>
-<h3>Margherita Pizza</h3>
-<p>Classic pizza with fresh mozzarella, tomatoes, and basil</p>
-<div class="price">Rs. 1200</div>
-</div>
-</div>
-
-<div class="food-card" data-category="burger">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
-<div class="food-info">
-<span class="category">Burger</span>
-<h3>Zinger Burger</h3>
-<p>Crispy chicken fillet with lettuce, mayo, and cheese</p>
-<div class="price">Rs. 450</div>
-</div>
-</div>
-
-<div class="food-card" data-category="bbq">
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" alt="BBQ">
-<div class="food-info">
-<span class="category">BBQ</span>
-<h3>Chicken Tikka</h3>
-<p>Juicy grilled chicken marinated in special spices</p>
-<div class="price">Rs. 650</div>
-</div>
-</div>
-
-<div class="food-card" data-category="fastfood">
-<img src="https://images.unsplash.com/photo-1630383249896-424e482df921" alt="Fries">
-<div class="food-info">
-<span class="category">Fast Food</span>
-<h3>Loaded Fries</h3>
-<p>Crispy fries topped with cheese, jalapenos and sauce</p>
-<div class="price">Rs. 350</div>
-</div>
-
-<div class="food-card" data-category="drinks">
-<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Drink">
-<div class="food-info">
-<span class="category">Drinks</span>
-<h3>Mint Margarita</h3>
-<p>Refreshing blend of mint, lemon, and crushed ice</p>
-<div class="price">Rs. 250</div>
-</div>
-
-<div class="food-card" data-category="desserts">
-<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="Dessert">
-<div class="food-info">
-<span class="category">Desserts</span>
-<h3>Chocolate Lava Cake</h3>
-<p>Warm chocolate cake with molten center, served with ice cream</p>
-<div class="price">Rs. 400</div>
-</div>
-</div>
-</div>
-</section>
-
-<footer>
-<div class="container">
-<div class="footer-content">
-<div>
-<h3>Tasty Bites</h3>
-<p>Serving happiness through delicious food since 2020.</p>
-</div>
-<div>
-<h3>Contact Us</h3>
-<p>📍 Jam Shoro, Sindh, Pakistan</p>
-<p>📞 +92 300 1234567</p>
-<p>✉️ info@tastybites.pk</p>
-</div>
-<div>
-<h3>Follow Us</h3>
-<div class="social">
-<a href="#">Facebook</a>
-<a href="#">Instagram</a>
-<a href="#">WhatsApp</a>
-</div>
-</div>
-<div class="copyright">
-<p>&copy; 2026 Tasty Bites Restaurant. All rights reserved.</p>
-</div>
-</footer>
-
-<button id="backToTop" onclick="scrollToTop()">↑</button>
 <script src="js/script.js"></script>
+
 </body>
 </html>
