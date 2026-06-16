@@ -1,46 +1,39 @@
-function filterMenu(category){
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-let cards=document.querySelectorAll(".menu-card");
-
-cards.forEach(card=>{
-
-if(category==="all"){
-card.style.display="block";
-}
-
-else if(card.classList.contains(category)){
-card.style.display="block";
-}
-
-else{
-card.style.display="none";
-}
-
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
-}
+// Menu Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const menuItems = document.querySelectorAll('.menu-item');
 
-document.addEventListener("DOMContentLoaded",()=>{
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-let form=document.getElementById("contactForm");
+        const filter = btn.getAttribute('data-filter');
 
-if(form){
-
-form.addEventListener("submit",(e)=>{
-
-e.preventDefault();
-
-let name=document.getElementById("name").value;
-
-if(name===""){
-alert("Please enter your name");
-return;
-}
-
-alert("Message Sent Successfully");
-
+        menuItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
 });
 
+// Contact Form
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Message sent! We will contact you soon.');
+        contactForm.reset();
+    });
 }
-
-});
