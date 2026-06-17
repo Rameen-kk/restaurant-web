@@ -3,173 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodieHub - Home</title>
+    <title>Foodie - Restaurant Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- 1. Responsive Navigation Bar + Logo -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <i class="fas fa-utensils"></i> FoodieHub
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Foodie</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#dishes">Menu</a></li>
+            <li><a href="#why-us">About</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
 
-    <!-- 2. Hero Section with CTA -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Taste The Best Food In Hyderabad</h1>
-            <p>Fresh ingredients, authentic recipes, unforgettable experience</p>
+            <h1>Delicious Food, Delivered Fast</h1>
+            <p>Experience the best flavors from our kitchen to your table</p>
             <div class="hero-buttons">
-                <a href="menu.html" class="btn-primary">View Menu</a>
-                <a href="contact.html" class="btn-secondary">Book Table</a>
+                <a href="#dishes" class="btn-primary">Order Now</a>
+                <a href="#why-us" class="btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- 3. Featured Dishes Section -->
-    <section class="featured-section">
-        <div class="container">
-            <h2>Featured Dishes</h2>
-            <p class="section-subtitle">Our most loved dishes by customers</p>
-            <div class="dishes-grid">
-                <div class="dish-card">
-                    <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400" alt="Chicken Tikka">
-                    <h3>Chicken Tikka</h3>
-                    <p>Grilled to perfection with secret spices</p>
-                    <span class="price">Rs. 750</span>
-                </div>
-                <div class="dish-card">
-                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400" alt="Biryani">
-                    <h3>Special Biryani</h3>
-                    <p>Aromatic basmati rice with tender chicken</p>
-                    <span class="price">Rs. 650</span>
-                </div>
-                <div class="dish-card">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Zinger Burger">
-                    <h3>Zinger Burger</h3>
-                    <p>Crispy chicken with signature sauce</p>
-                    <span class="price">Rs. 550</span>
-                </div>
+    <!-- Featured Dishes -->
+    <section class="container" id="dishes">
+        <h2>Featured Dishes</h2>
+        <p class="section-subtitle">Our most loved dishes by customers</p>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with fresh veggies and cheese</p>
+                <span class="price">$12.99</span>
+            </div>
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Fresh tomatoes, mozzarella, and basil</p>
+                <span class="price">$14.99</span>
+            </div>
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="Salad">
+                <h3>Greek Salad</h3>
+                <p>Crispy greens with feta cheese and olives</p>
+                <span class="price">$9.99</span>
             </div>
         </div>
     </section>
 
-    <!-- 4. Why Choose Us Section -->
-    <section class="why-us-section">
+    <!-- Why Choose Us -->
+    <section class="why-us-section" id="why-us">
         <div class="container">
-            <h2>Why Choose FoodieHub?</h2>
+            <h2>Why Choose Us</h2>
+            <p class="section-subtitle">We serve quality with passion</p>
             <div class="features-grid">
-                <div class="feature-box">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Fresh Ingredients</h3>
-                    <p>We use 100% fresh and locally sourced ingredients daily</p>
-                </div>
-                <div class="feature-box">
-                    <i class="fas fa-award"></i>
-                    <h3>Expert Chefs</h3>
-                    <p>Our chefs have 15+ years of experience in Pakistani cuisine</p>
-                </div>
                 <div class="feature-box">
                     <i class="fas fa-shipping-fast"></i>
                     <h3>Fast Delivery</h3>
-                    <p>Hot food delivered to your doorstep within 30 minutes</p>
+                    <p>Get your food delivered in 30 minutes or less</p>
                 </div>
                 <div class="feature-box">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Hygienic Kitchen</h3>
-                    <p>Certified hygienic kitchen with regular quality checks</p>
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We only use the freshest ingredients daily</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Best Quality</h3>
+                    <p>Award-winning chefs preparing your meals</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Customer Testimonials -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Best biryani in Hyderabad! The taste reminds me of home. Highly recommended."</p>
-                    <div class="customer">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Customer">
-                        <div>
-                            <h4>Ahmed Khan</h4>
-                            <span>Regular Customer</span>
-                        </div>
+    <!-- Testimonials -->
+    <section class="container" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="section-subtitle">Real reviews from real people</p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Best burger I've ever had! Super fast delivery too."</p>
+                <div class="customer">
+                    <img src="https://i.pravatar.cc/60?img=1" alt="Customer">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <span>Regular Customer</span>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Amazing ambiance and even better food. Perfect place for family dinners."</p>
-                    <div class="customer">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Customer">
-                        <div>
-                            <h4>Fatima Ali</h4>
-                            <span>Food Blogger</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Quick service and delicious zinger burger. My go-to place every weekend!"</p>
-                    <div class="customer">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Customer">
-                        <div>
-                            <h4>Usman Sheikh</h4>
-                            <span>Student</span>
-                        </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Amazing quality and taste. Highly recommend this place!"</p>
+                <div class="customer">
+                    <img src="https://i.pravatar.cc/60?img=3" alt="Customer">
+                    <div>
+                        <h4>Mike Chen</h4>
+                        <span>Food Blogger</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Footer with Social Media + Contact -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3><i class="fas fa-utensils"></i> FoodieHub</h3>
-                <p>Serving authentic Pakistani cuisine since 2020. Your happiness is our priority.</p>
+                <h3>Foodie</h3>
+                <p>Serving happiness on every plate since 2020</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#dishes">Menu</a></li>
+                    <li><a href="#why-us">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contact Info</h4>
-                <p><i class="fas fa-map-marker-alt"></i> Auto Bahn Road, Hyderabad</p>
-                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
-                <p><i class="fas fa-envelope"></i> info@foodiehub.pk</p>
-                <p><i class="fas fa-clock"></i> Mon-Sun: 12PM - 12AM</p>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Food Street</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                    <li><i class="fas fa-envelope"></i> info@foodie.com</li>
+                </ul>
             </div>
-        </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 FoodieHub. All rights reserved.</p>
+            <p>&copy; 2026 Foodie. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Mobile Menu JS -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
