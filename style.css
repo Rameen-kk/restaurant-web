@@ -582,3 +582,57 @@ footer {
         justify-content: center;
     }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-size: 16px;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Mobile First Approach */
+
+/* Tablet: 768px se upar */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop/Desktop: 1024px se upar */
+@media (min-width: 1024px) {
+  .hero-section {
+    display: flex;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile: 768px se neeche - Hamburger Menu */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
